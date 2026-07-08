@@ -1,0 +1,12 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main(){
+    ifstream fin("data.txt");
+    fin.seekg(2);
+    char ch;
+    fin.get(ch);
+    cout<<"character="<<ch;
+    fin.close();
+    return 0;
+}
